@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	char str[100];
+	int i=0,cs=1,sp=0,x;
+	printf("enter a string\n");
+	gets(str);
+
+while(str[i]!=0)
+
+	{
+		cs++;
+		if (str [i]== ' ')
+		 {
+		 	++sp;
+		 }
+	i++;
+	}
+	x=cs-sp;
+	printf("\n the number of word  is %d and number of charaters is %d",sp+1,x);
+	return 0;
+}
